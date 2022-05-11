@@ -11,13 +11,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-        # Downgraded to v1 till this it works with v2
-        # Follow up: https://github.com/actions/setup-node/issues/224
-      - uses: actions/setup-node@v1
+      - uses: actions/cache@v2
         with:
-          node-version: 14
+          path: vendor/bundle
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile') }}
+          restore-keys: |
+            ${{ runner.os }}-gems-
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 17
+      - run: node -v
       - run: npm ci
       - uses: helaili/jekyll-action@v2
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           target_branch: "gh-pages"
+          pre_build_commands: apk --update add nodejs
