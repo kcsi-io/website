@@ -30,7 +30,7 @@ plugins:
   - jekyll-paginate
 
 paginate: 3
-paginate_path: /blog/page:num/
+paginate_path: /blog/:num/
 
 collections:
   posts:
