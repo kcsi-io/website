@@ -1,0 +1,13 @@
+main:
+  - name: "Home"
+    url: "/"
+    weight: 1
+  - name: "Fudosan"
+    url: "/fudosan/"
+    weight: 2
+  - name: "About"
+    url: "/about/"
+    weight: 3
+  - name: "Blog"
+    url: "/blog/"
+    weight: 4

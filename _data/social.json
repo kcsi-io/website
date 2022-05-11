@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Email",
+    "link": "mailto:konstantin@kcsi.fr",
+    "image": "https://simpleicons.org/icons/maildotru.svg"
+  },
+  {
+    "name": "Github",
+    "link": "https://github.com/kcsi-io",
+    "image": "https://simpleicons.org/icons/github.svg"
+  }
+]
