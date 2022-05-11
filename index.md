@@ -858,29 +858,29 @@ full: true
             </svg>
          </div>
       </div>
-      <form class="">
-         <div>
+      <form action="https://formspree.io/f/{{ site.formspree_id }}" method="POST">
+         <div class="mt-8">
             <span class="uppercase text-sm text-gray-600 font-bold">Full Name</span>
             <input class="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-               type="text" placeholder="" required>
+               type="text" placeholder="" required name="name">
          </div>
          <div class="mt-8">
             <span class="uppercase text-sm text-gray-600 font-bold">Email</span>
             <input class="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-               type="email" required>
+               type="email" required name="email">
          </div>
          <div class="mt-8">
             <span class="uppercase text-sm text-gray-600 font-bold">Company</span>
             <input class="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-               type="text">
+               type="text" name="company">
          </div>
          <div class="mt-8">
             <span class="uppercase text-sm text-gray-600 font-bold">Message</span>
             <textarea
-               class="w-full h-32 bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" required></textarea>
+               class="w-full h-32 bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" required name="message"></textarea>
          </div>
          <div class="mt-8">
-            <button
+            <button type="submit"
                class="uppercase text-sm font-bold tracking-wide gradient text-white p-3 rounded-lg w-full focus:outline-none focus:shadow-outline">
             Send Message
             </button>

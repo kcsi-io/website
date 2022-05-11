@@ -14,6 +14,8 @@ google_analytics_id: false # replace with "UA-XXXX"
 
 email: konstantin@kcsi.fr
 
+formspree_id: myyolwpl
+
 logo:
   logo_desktop_image: assets/images/logo/logo.svg
   logo_desktop_text: "KCSI"
