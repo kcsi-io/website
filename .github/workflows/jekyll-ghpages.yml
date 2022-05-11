@@ -20,7 +20,6 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 17
-      - run: node -v
       - run: npm ci
       - uses: helaili/jekyll-action@v2
         with:

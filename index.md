@@ -1,7 +1,6 @@
 ---
 layout: default
-title: KCSI
-heading: <em>KCSI</em>
+title: Home
 description: KCSI description.
 full: true
 ---

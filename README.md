@@ -20,6 +20,7 @@ npm install
 
 ```
 bundle install
+bundle add webrick
 ```
 
 To start the Jekyll local development server.
