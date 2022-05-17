@@ -16,7 +16,9 @@ email: konstantin@kcsi.fr
 
 formspree_id: myyolwpl
 
-logo:
+logo: assets/images/logo/logo.svg
+
+logo_style:
   logo_desktop_image: assets/images/logo/logo.svg
   logo_desktop_text: "KCSI"
   logo_mobile_image: assets/images/logo/logo-mobile.svg
@@ -30,6 +32,8 @@ plugins:
   - jekyll-environment-variables
   - jekyll-postcss
   - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-seo-tag
 
 paginate: 3
 paginate_path: /posts/:num/
